@@ -1,0 +1,141 @@
+img{
+    max-width: 100%;
+}
+
+.carousel-item img{
+    height: 620px;
+    width: 100%;
+}
+.carousel-item{
+    position: relative;
+}
+.carousel-item h1 {
+	position: absolute;
+	top: 70%;
+	left: 36%;
+	font-size: 100px;
+	color: #fff;
+}
+
+.circle-img img{
+    height: 300px;
+    padding: 10px;
+    border: 5px solid red;
+}
+.circle-img .ano{
+    padding: 20px;
+}
+
+.about{
+    background: rgb(240, 240, 240);
+}
+
+.pagination-part{
+    background: rgb(204, 220, 231);
+    padding: 50px 0;
+}
+.pagination-part ul{
+    margin: 0;
+
+}
+
+footer{
+    background: #000;
+    margin-bottom: 10px;
+}
+
+/* my design */
+
+
+.my{
+    text-align: center;
+}
+
+.my-design{
+    margin-top: 100px;
+    height: 200px;
+    width: 200px;
+    background-image: url(img/1Maidul\ 3.jpg);
+    background-position: center ;
+    background-size: cover;
+    position: relative;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    
+}
+
+.my-design::after{
+    content: '';
+    height: 10px;
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: blue;
+    transition: .4s;
+
+}
+.my-design:hover::after{
+    width: 100%;
+    border-radius: 50%;
+
+}
+.my-design::before{
+    content: '';
+    height: 10px;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: red;
+    transition: .4s;
+
+
+}
+
+.my-design:hover::before{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.my-design span{
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.my-design span::after{
+    content: '';
+    height: 0;
+    width: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: green;
+
+    transition: .4s;
+
+}
+.my-design span:hover::after{
+    height: 100%;
+    border-radius: 50%;
+}
+
+.my-design span::before{
+    content: '';
+    height: 0;
+    width: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgb(128, 235, 42);
+    transition: .4s;
+
+
+}
+
+.my-design span:hover::before{
+    height: 100%;
+    border-radius: 50%;
+}
